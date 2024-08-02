@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -7,6 +7,7 @@ import {
   faSearch,
   faInfoCircle,
 } from "@fortawesome/free-solid-svg-icons";
+import Button from "./button";
 
 const NavBar = () => {
   const navigate = useNavigate();
@@ -62,6 +63,12 @@ const NavBar = () => {
           />
         </li>
       </ul>
+      <Button className="px-4 py-2 rounded-lg text-white bg-red-500 hover-bg-red-600">
+        Register
+      </Button>
+      <Button className=" ml-5 mr-10 px-4 py-2 rounded-lg text-white bg-blue-200">
+        Login
+      </Button>
     </header>
   );
 };
