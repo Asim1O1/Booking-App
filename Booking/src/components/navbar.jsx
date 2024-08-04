@@ -63,12 +63,13 @@ const NavBar = () => {
           />
         </li>
       </ul>
-      <Button className="px-4 py-2 rounded-lg text-white bg-red-500 hover-bg-red-600">
-        Register
-      </Button>
-      <Button className=" ml-5 mr-10 px-4 py-2 rounded-lg text-white bg-blue-200">
-        Login
-      </Button>
+      <Button className="px-4 py-2 rounded-lg text-white bg-red-500 hover:bg-red-600">
+  Register
+</Button>
+<Button className="ml-5 mr-10 px-4 py-2 rounded-lg text-white bg-blue-400 hover:bg-blue-500">
+  Login
+</Button>
+
     </header>
   );
 };
