@@ -2,6 +2,7 @@ import React from "react";
 import NavBar from "../components/navbar";
 import Button from "../components/button";
 
+
 const HomePage = () => {
   return (
     <div>
