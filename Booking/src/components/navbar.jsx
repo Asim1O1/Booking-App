@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Register from "./register";
 import {
   faHome,
   faHotel,
@@ -38,10 +37,7 @@ const NavBar = () => {
       </div>
 
       <div className="lg:hidden mr-4">
-        <button
-          onClick={toggleMenu}
-          className="text-white focus:outline-none"
-        >
+        <button onClick={toggleMenu} className="text-white focus:outline-none">
           <FontAwesomeIcon icon={isMenuOpen ? faTimes : faBars} size="lg" />
         </button>
       </div>
@@ -131,10 +127,10 @@ const NavBar = () => {
 
       <div className="hidden lg:flex items-center">
         <Button className="px-4 py-2 rounded-lg text-white bg-red-500 hover:bg-red-600">
-        <Link to= {"/register"}>  Register</Link>
+          <Link to={"/register"}> Register</Link>
         </Button>
         <Button className="ml-5 mr-10 px-4 py-2 rounded-lg text-white bg-blue-300 hover:bg-blue-500">
-          Login
+          <Link to={"/login"}> Login</Link>
         </Button>
       </div>
     </header>

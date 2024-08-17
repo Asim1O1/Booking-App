@@ -5,6 +5,7 @@ import HotelPage from "./pages/hotel";
 import SearchComponent from "./components/searchComp";
 import Calendar from "./components/calendar";
 import Register from "./components/register";
+import Login from "./components/login";
 import "./tailwind.css";
 
 function App() {
@@ -17,7 +18,8 @@ function App() {
           <Route path="/hotels" element={<HotelList />}></Route>
           <Route path="/searchComponent" element={<SearchComponent />}></Route>
           <Route path="/hotel/:id" element={<HotelPage />}></Route>
-          <Route path="/register" element={<Register/>}></Route>
+          <Route path="/register" element={<Register />}></Route>
+          <Route path="/login" element={<Login />}></Route>
         </Routes>
       </BrowserRouter>
     </div>
