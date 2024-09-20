@@ -61,7 +61,7 @@ const NavBar = () => {
         </li>
         <li className="text-lg px-3 py-1 rounded-xl mr-4">
           <Link
-            to="/hotel"
+            to="/hotels"
             className={`${linkClass} ${
               location.pathname === "/hotels" ? activeLinkClass : ""
             }`}
